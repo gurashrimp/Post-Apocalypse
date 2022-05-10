@@ -64,6 +64,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\ScriptableObject\Items\Scripts\PotionObject.cs" />
+    <Compile Include="Assets\Inventory\Scripts\InventoryObject.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
@@ -72,12 +73,12 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\DisplayInventory.cs" />
     <Compile Include="Assets\ScriptableObject\Items\Scripts\EquipmentObject.cs" />
     <Compile Include="Assets\Scripts\TimeManager.cs" />
-    <Compile Include="Assets\ScriptableObject\Items\Scripts\FoodObject.cs" />
-    <Compile Include="Assets\Inventory\Scripts\InventoryObject.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
-    <Compile Include="Assets\DisplayInventory.cs" />
+    <Compile Include="Assets\ScriptableObject\Items\Scripts\FoodObject.cs" />
+    <Compile Include="Assets\ScriptableObject\Items\Scripts\ItemDatabaseObject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

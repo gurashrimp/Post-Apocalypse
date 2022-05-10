@@ -18,6 +18,13 @@ public class PlayerScript : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        for (int i = 0; i < _inventory.Container.Count; i++)
+        {
+            if (_inventory.Container[i].id == 3 )
+            {
+                melee.SetActive(true);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -30,6 +37,13 @@ public class PlayerScript : MonoBehaviour
         Debug.Log(movement.x);
         //movement.y = Input.GetAxisRaw("Vertical");
         movement.y = joystick.Vertical;
+        for (int i = 0; i < _inventory.Container.Count; i++)
+        {
+            if (_inventory.Container[i].id == 3)
+            {
+                melee.SetActive(true);
+            }
+        }
         if (movement.x >0) {
             
             if (isRight == false)
@@ -65,6 +79,14 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             inventory.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            _inventory.Save();
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            _inventory.Load();
         }
     }
     void Flip()
